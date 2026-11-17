@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <title>Kanî Labs</title>
-  <path fill="none" stroke="#FEBD11" stroke-width="87" stroke-linecap="round" stroke-linejoin="round" d="M296,524 A216,216 0 0 1 728,524 M188,524 L68,524 M231.41,362 L127.48,302 M350,243.41 L290,139.48 M512,200 L512,80 M674,243.41 L734,139.48 M792.59,362 L896.52,302 M836,524 L956,524"/>
-  <circle cx="512" cy="524" r="90" fill="#FEBD11"/>
-  <path fill="none" stroke="#1D4A2E" stroke-width="87" stroke-linecap="round" stroke-linejoin="round" d="M62,968 L212,776 L362,968 L512,776 L662,968 L812,776 L962,968"/>
+  <title>Deq (placeholder until the project has its own logo)</title>
+  <circle cx="512" cy="512" r="490" fill="#F8F8F8" stroke="#1E1E1E" stroke-width="4"/>
+  <circle cx="512" cy="512" r="380" fill="none" stroke="#C9CEC9" stroke-width="16" stroke-dasharray="40 32"/>
+  <text x="512" y="512" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="400" font-weight="700" fill="#1D4A2E">D</text>
 </svg>
