@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanî Labs</title>
+  <meta name="description" content="Kanî Labs makes open-source software for Kurdish language and culture, and private, offline-first tools for everyone.">
+  <meta name="theme-color" content="#1D4A2E">
+  <link rel="canonical" href="https://kanilabs.github.io/">
+  <link rel="icon" href="assets/brand/logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/brand/avatar-500.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kanî Labs">
+  <meta property="og:title" content="Kanî Labs: open-source tools, from a Kurdish spring">
+  <meta property="og:description" content="Open-source software for Kurdish language and culture, and private, offline-first tools for everyone.">
+  <meta property="og:url" content="https://kanilabs.github.io/">
+  <meta property="og:image" content="https://kanilabs.github.io/assets/brand/banner-1500x500.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root {
+      --sun: #FEBD11;
+      --water: #1D4A2E;
+      --bg: #F8F8F8;
+      --surface: #FFFFFF;
+      --ink: #1E1E1E;
+      --muted: #5A5F5C;
+      --line: #E3E5E3;
+      --accent: #1D4A2E;
+      --chip: #EEF2EF;
+      --shadow: 0 1px 2px rgb(0 0 0 / .04), 0 8px 24px rgb(0 0 0 / .06);
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #121614;
+        --surface: #1A201D;
+        --ink: #ECEFEC;
+        --muted: #A3ABA6;
+        --line: #2A322E;
+        --accent: #FEBD11;
+        --chip: #232B27;
+        --shadow: 0 1px 2px rgb(0 0 0 / .3), 0 8px 24px rgb(0 0 0 / .25);
+        color-scheme: dark;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Arabic", sans-serif;
+    }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; border-radius: 4px; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+    [lang="ckb"] { font-family: "Noto Sans Arabic", "Vazirmatn", "Segoe UI", Tahoma, sans-serif; }
+
+    /* Header */
+    .top { border-bottom: 1px solid var(--line); }
+    .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+    .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; }
+    .brand img { width: 32px; height: 32px; }
+    .top nav { display: flex; gap: 20px; font-size: 15px; }
+    .top nav a { color: var(--muted); text-decoration: none; }
+    .top nav a:hover { color: var(--ink); }
+
+    /* Hero */
+    .hero { padding: 72px 0 56px; text-align: center; }
+    .hero img { width: 112px; height: 112px; border-radius: 24px; box-shadow: var(--shadow); }
+    .hero h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; margin: 24px 0 8px; letter-spacing: -0.02em; }
+    .hero .tagline { font-size: clamp(1.1rem, 2.6vw, 1.35rem); font-weight: 600; margin: 0 0 20px; }
+    .hero .lede { max-width: 640px; margin: 0 auto; color: var(--muted); }
+    .hero .cta { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: 999px;
+      font-weight: 600; text-decoration: none; border: 1px solid var(--line); color: var(--ink); background: var(--surface);
+    }
+    .btn.primary { background: var(--water); border-color: var(--water); color: #fff; }
+    .btn:hover { filter: brightness(1.06); }
+
+    /* Sections */
+    section { padding: 48px 0; }
+    h2 { font-size: 1.6rem; margin: 0 0 8px; letter-spacing: -0.01em; }
+    .section-lede { color: var(--muted); margin: 0 0 28px; }
+
+    /* Project grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; list-style: none; padding: 0; margin: 0; }
+    .card {
+      display: flex; flex-direction: column; gap: 14px; padding: 22px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow);
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--sun) 60%, var(--line)); }
+    .card header { display: flex; align-items: center; gap: 14px; }
+    .card .logo { width: 56px; height: 56px; flex: none; padding: 5px; border-radius: 14px; object-fit: contain; background: #F8F8F8; border: 1px solid var(--line); }
+    .card h3 { margin: 0; font-size: 1.2rem; line-height: 1.25; }
+    .card .alt { color: var(--muted); font-weight: 500; font-size: .95rem; margin-left: 8px; }
+    .card p { margin: 0; color: var(--muted); flex: 1; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+    .chips li { font-size: 12.5px; padding: 2px 10px; border-radius: 999px; background: var(--chip); color: var(--muted); }
+    .chips li.status { background: color-mix(in srgb, var(--sun) 22%, transparent); color: var(--ink); }
+    .links { display: flex; gap: 16px; font-weight: 600; font-size: 15px; }
+    .links a { text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+
+    /* Mark + principles */
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+    .mark { display: flex; gap: 20px; align-items: flex-start; }
+    .mark img { width: 88px; height: 88px; flex: none; }
+    .principles { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .principles li { padding: 16px 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; }
+    .principles strong { display: block; }
+    .principles span { color: var(--muted); }
+
+    footer { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--muted); font-size: 14px; }
+    footer .wrap { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+    @media (max-width: 760px) {
+      .split { grid-template-columns: 1fr; }
+      .top nav { gap: 14px; }
+      .hero { padding: 48px 0 32px; }
+    }
+    @media (max-width: 420px) {
+      .top nav a.hide-sm { display: none; }
+      .grid { grid-template-columns: 1fr; }
+    }
+    @media (prefers-reduced-motion: reduce) { .card { transition: none; } .card:hover { transform: none; } }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./" aria-label="Kanî Labs home">
+        <img src="assets/brand/logo.svg" alt="" width="32" height="32">
+        <span>Kanî Labs</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#projects">Projects</a>
+        <a href="#about" class="hide-sm">About</a>
+        <a href="https://github.com/kanilabs">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero wrap">
+      <img src="assets/brand/logo.svg" alt="Kanî Labs logo: the deq half sun above a deq water zigzag" width="112" height="112">
+      <h1>Kanî Labs</h1>
+      <p class="tagline">Open-source tools, from a Kurdish spring.</p>
+      <p class="lede"><em>Kanî</em> (<span lang="ckb" dir="rtl">کانی</span>) is Kurdish for a spring, the place where water comes out of the ground: a source. We make open-source software for Kurdish language and culture, and private, offline-first tools for everyone.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See the projects</a>
+        <a class="btn" href="https://github.com/kanilabs">Kanî Labs on GitHub</a>
+      </div>
+    </div>
+
+    <section id="projects">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-lede">Every project is free software and works offline wherever it can.</p>
+
+        <ul class="grid">
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/open-vitae.svg" alt="Open Vitae logo" width="56" height="56" loading="lazy">
+              <h3>Open Vitae</h3>
+            </header>
+            <p>A private resume builder that runs entirely in your browser. LTR and RTL, works offline, exports to PDF, Word and more.</p>
+            <ul class="chips"><li>Web app</li><li>Offline</li><li>RTL</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/open-vitae/">Open the app →</a>
+              <a href="https://github.com/kanilabs/open-vitae">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/roj.svg" alt="Roj logo" width="56" height="56" loading="lazy">
+              <h3>Roj<span class="alt" lang="ckb" dir="rtl">ڕۆژ</span></h3>
+            </header>
+            <p>The Kurdish solar calendar for GNOME Shell, the web and the command line, with Kurdish days for Google Calendar and iPhone.</p>
+            <ul class="chips"><li>GNOME Shell</li><li>Web</li><li>CLI</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/roj/">Website →</a>
+              <a href="https://github.com/kanilabs/roj">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/tsroj.png" alt="tsroj logo" width="56" height="56" loading="lazy">
+              <h3>tsroj</h3>
+            </header>
+            <p>The TypeScript library for the Kurdish solar calendar.</p>
+            <ul class="chips"><li>TypeScript</li><li>Library</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/tsroj/">Docs →</a>
+              <a href="https://github.com/kanilabs/tsroj">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/pyroj.svg" alt="pyroj logo, shared with Roj" width="56" height="56" loading="lazy">
+              <h3>pyroj</h3>
+            </header>
+            <p>Kurdish solar calendar and conversions (Gregorian, Persian, tabular Islamic) in Python, standard library only.</p>
+            <ul class="chips"><li>Python</li><li>Library</li></ul>
+            <div class="links">
+              <a href="https://pypi.org/project/pyroj/">PyPI →</a>
+              <a href="https://github.com/kanilabs/pyroj">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/zimanyar.svg" alt="Zimanyar logo" width="56" height="56" loading="lazy">
+              <h3>Zimanyar</h3>
+            </header>
+            <p>Offline grammar checker and teacher for Kurdish (Sorani and Kurmanji): browser extension, Linux app, CLI and web.</p>
+            <ul class="chips"><li>Browser extension</li><li>Linux</li><li>CLI</li><li>Web</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/Zimanyar/">Website →</a>
+              <a href="https://github.com/kanilabs/Zimanyar">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/zimankit.svg" alt="Zimankit logo" width="56" height="56" loading="lazy">
+              <h3>Zimankit</h3>
+            </header>
+            <p>Kurdish language toolkit: normalisation, IPA, transliteration, morphology, verb paradigms, language ID and wordlists.</p>
+            <ul class="chips"><li>Toolkit</li><li>Sorani</li><li>Kurmanji</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/zimankit/">Try it in your browser →</a>
+              <a href="https://github.com/kanilabs/zimankit">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/tajdin.svg" alt="Tajdîn logo" width="56" height="56" loading="lazy">
+              <h3>Tajdîn</h3>
+            </header>
+            <p>Internet radio always by your side: Kurdish stations and 50,000 more, for Chrome, Firefox and the web.</p>
+            <ul class="chips"><li>Chrome</li><li>Firefox</li><li>Web</li></ul>
+            <div class="links">
+              <a href="https://kanilabs.github.io/tajdin/">Website →</a>
+              <a href="https://github.com/kanilabs/tajdin">Source</a>
+            </div>
+          </li>
+
+          <li class="card">
+            <header>
+              <img class="logo" src="assets/projects/deq.svg" alt="Deq: the deq half sun" width="56" height="56" loading="lazy">
+              <h3>Deq<span class="alt" lang="ckb" dir="rtl">دەق</span></h3>
+            </header>
+            <p>Traditional Kurdish tattoo shapes as an open, parametric design system: spec, TypeScript, Python and Rust libraries, icons, fonts and Studio.</p>
+            <ul class="chips"><li class="status">In development</li><li>Design system</li><li>TS · Python · Rust</li></ul>
+            <div class="links">
+              <a href="https://github.com/kanilabs/deq">Source →</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap split">
+        <div>
+          <h2>The mark</h2>
+          <div class="mark">
+            <img src="assets/brand/logo-mark.svg" alt="" width="88" height="88" loading="lazy">
+            <p>The logo is made only of signs from deq, the traditional Kurdish tattoo, as catalogued in <a href="https://github.com/kanilabs/deq">Deq</a>. The <strong>half sun</strong> (an arc, seven rays and a dot) is recorded by wearers and writers as “the source of life”. Below it, the <strong>zigzag</strong> is water: the spring.</p>
+          </div>
+        </div>
+        <div>
+          <h2>Principles</h2>
+          <ul class="principles">
+            <li><strong>Private by default.</strong> <span>Tools work offline wherever they can.</span></li>
+            <li><strong>Kurdish first, never Kurdish only.</strong> <span>Sorani and Kurmanji, right to left and left to right.</span></li>
+            <li><strong>Free software.</strong> <span>Most projects are GPL-3.0-or-later.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© Kanî Labs · Free software</span>
+      <a href="https://github.com/kanilabs">github.com/kanilabs</a>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <title>Kanî Labs</title>
+  <rect width="1024" height="1024" rx="200" fill="#F8F8F8"/>
+  <path fill="none" stroke="#FEBD11" stroke-width="81.2" stroke-linecap="round" stroke-linejoin="round" d="M310.4,523.2 A201.6,201.6 0 0 1 713.6,523.2 M209.6,523.2 L97.6,523.2 M250.11,372 L153.12,316 M360.8,261.31 L304.8,164.32 M512,220.8 L512,108.8 M663.2,261.31 L719.2,164.32 M773.89,372 L870.88,316 M814.4,523.2 L926.4,523.2"/>
+  <circle cx="512" cy="523.2" r="84" fill="#FEBD11"/>
+  <path fill="none" stroke="#1D4A2E" stroke-width="81.2" stroke-linecap="round" stroke-linejoin="round" d="M92,937.6 L232,758.4 L372,937.6 L512,758.4 L652,937.6 L792,758.4 L932,937.6"/>
+</svg>
