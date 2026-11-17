@@ -18,16 +18,16 @@ This repository is the source of **[kanilabs.github.io](https://kanilabs.github.
 
 Every project is free software and works offline wherever it can.
 
-| | Project | What it is | Links |
-|:---:|---|---|---|
-| <img src="assets/projects/open-vitae.svg" width="48" alt="Open Vitae logo"> | **Open Vitae** | A private resume builder that runs entirely in your browser. LTR and RTL, works offline, exports to PDF, Word and more. | [Open the app](https://kanilabs.github.io/open-vitae/) · [Source](https://github.com/kanilabs/open-vitae) |
-| <img src="assets/projects/roj.svg" width="48" alt="Roj logo"> | **Roj** · ڕۆژ | The Kurdish solar calendar for GNOME Shell, the web and the command line, with Kurdish days for Google Calendar and iPhone. | [Website](https://kanilabs.github.io/roj/) · [Source](https://github.com/kanilabs/roj) |
-| <img src="assets/projects/tsroj.png" width="48" alt="tsroj logo"> | **tsroj** | The TypeScript library for the Kurdish solar calendar. | [Docs](https://kanilabs.github.io/tsroj/) · [Source](https://github.com/kanilabs/tsroj) |
-| <img src="assets/projects/pyroj.svg" width="48" alt="pyroj logo, shared with Roj"> | **pyroj** | Kurdish solar calendar and conversions (Gregorian, Persian, tabular Islamic) in Python, standard library only. | [PyPI](https://pypi.org/project/pyroj/) · [Source](https://github.com/kanilabs/pyroj) |
-| <img src="assets/projects/zimanyar.svg" width="48" alt="Zimanyar logo"> | **Zimanyar** | Offline grammar checker and teacher for Kurdish (Sorani and Kurmanji): browser extension, Linux app, CLI and web. | [Website](https://kanilabs.github.io/Zimanyar/) · [Source](https://github.com/kanilabs/Zimanyar) |
-| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/zimankit-dark.svg"><img src="assets/projects/zimankit.svg" width="48" alt="Zimankit logo"></picture> | **Zimankit** | Kurdish language toolkit: normalisation, IPA, transliteration, morphology, verb paradigms, language ID and wordlists. | [Try it in your browser](https://kanilabs.github.io/zimankit/) · [Source](https://github.com/kanilabs/zimankit) |
-| <img src="assets/projects/tajdin.svg" width="48" alt="Tajdîn logo"> | **Tajdîn** | Internet radio always by your side: Kurdish stations and 50,000 more, for Chrome, Firefox and the web. | [Website](https://kanilabs.github.io/tajdin/) · [Source](https://github.com/kanilabs/tajdin) |
-| <img src="assets/projects/deq.svg" width="48" alt="Deq: the deq half sun"> | **Deq** · دەق | Traditional Kurdish tattoo shapes as an open, parametric design system: spec, TypeScript, Python and Rust libraries, icons, fonts and Studio. *In development.* | [Source](https://github.com/kanilabs/deq) |
+| Project | What it is | Links |
+|:---:|---|---|
+| <img src="assets/projects/open-vitae.svg" width="48" height="48" alt="Open Vitae logo"><br>**Open Vitae** | A private resume builder that runs entirely in your browser. LTR and RTL, works offline, exports to PDF, Word and more. | [Open the app](https://kanilabs.github.io/open-vitae/) · [Source](https://github.com/kanilabs/open-vitae) |
+| <img src="assets/projects/roj.svg" width="48" height="48" alt="Roj logo"><br>**Roj** · ڕۆژ | The Kurdish solar calendar for GNOME Shell, the web and the command line, with Kurdish days for Google Calendar and iPhone. | [Website](https://kanilabs.github.io/roj/) · [Source](https://github.com/kanilabs/roj) |
+| <img src="assets/projects/tsroj.png" width="48" height="48" alt="tsroj logo"><br>**tsroj** | The TypeScript library for the Kurdish solar calendar. | [Docs](https://kanilabs.github.io/tsroj/) · [Source](https://github.com/kanilabs/tsroj) |
+| <img src="assets/projects/pyroj.svg" width="48" height="48" alt="pyroj logo, shared with Roj"><br>**pyroj** | Kurdish solar calendar and conversions (Gregorian, Persian, tabular Islamic) in Python, standard library only. | [PyPI](https://pypi.org/project/pyroj/) · [Source](https://github.com/kanilabs/pyroj) |
+| <img src="assets/projects/zimanyar.svg" width="48" height="48" alt="Zimanyar logo"><br>**Zimanyar** | Offline grammar checker and teacher for Kurdish (Sorani and Kurmanji): browser extension, Linux app, CLI and web. | [Website](https://kanilabs.github.io/Zimanyar/) · [Source](https://github.com/kanilabs/Zimanyar) |
+| <picture><source media="(prefers-color-scheme: dark)" srcset="assets/projects/zimankit-dark.svg"><img src="assets/projects/zimankit.svg" width="48" height="48" alt="Zimankit logo"></picture><br>**Zimankit** | Kurdish language toolkit: normalisation, IPA, transliteration, morphology, verb paradigms, language ID and wordlists. | [Try it in your browser](https://kanilabs.github.io/zimankit/) · [Source](https://github.com/kanilabs/zimankit) |
+| <img src="assets/projects/tajdin.svg" width="48" height="48" alt="Tajdîn logo"><br>**Tajdîn** | Internet radio always by your side: Kurdish stations and 50,000 more, for Chrome, Firefox and the web. | [Website](https://kanilabs.github.io/tajdin/) · [Source](https://github.com/kanilabs/tajdin) |
+| <img src="assets/projects/deq.svg" width="48" height="48" alt="Deq: the deq half sun"><br>**Deq** · دەق | Traditional Kurdish tattoo shapes as an open, parametric design system: spec, TypeScript, Python and Rust libraries, icons, fonts and Studio. *In development.* | [Source](https://github.com/kanilabs/deq) |
 
 ## The mark
 
