@@ -1,6 +1,2 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
-  <title>Deq (placeholder until the project has its own logo)</title>
-  <circle cx="512" cy="512" r="490" fill="#F8F8F8" stroke="#1E1E1E" stroke-width="4"/>
-  <circle cx="512" cy="512" r="380" fill="none" stroke="#C9CEC9" stroke-width="16" stroke-dasharray="40 32"/>
-  <text x="512" y="512" text-anchor="middle" dominant-baseline="central" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="400" font-weight="700" fill="#1D4A2E">D</text>
-</svg>
+<title>Deq</title><circle cx="512" cy="512" r="490" fill="#F8F8F8" stroke="#1E1E1E" stroke-width="4"/><g fill="#1D4A2E"><circle cx="778" cy="512" r="38"/><circle cx="700.09" cy="700.09" r="38"/><circle cx="512" cy="778" r="38"/><circle cx="323.91" cy="700.09" r="38"/><circle cx="246" cy="512" r="38"/><circle cx="323.91" cy="323.91" r="38"/><circle cx="512" cy="246" r="38"/><circle cx="700.09" cy="323.91" r="38"/></g><circle cx="512" cy="512" r="114" fill="none" stroke="#FEBD11" stroke-width="76"/></svg>

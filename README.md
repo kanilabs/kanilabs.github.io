@@ -27,7 +27,7 @@ Every project is free software and works offline wherever it can.
 | <img src="assets/projects/zimanyar.svg" width="48" height="48" alt="Zimanyar logo"><br>**Zimanyar** | Offline grammar checker and teacher for Kurdish (Sorani and Kurmanji): browser extension, Linux app, CLI and web. | [Website](https://kanilabs.github.io/Zimanyar/) · [Source](https://github.com/kanilabs/Zimanyar) |
 | <img src="assets/projects/zimankit.svg" width="48" height="48" alt="Zimankit logo"><br>**Zimankit** | Kurdish language toolkit: normalisation, IPA, transliteration, morphology, verb paradigms, language ID and wordlists. | [Try it in your browser](https://kanilabs.github.io/zimankit/) · [Source](https://github.com/kanilabs/zimankit) |
 | <img src="assets/projects/tajdin.svg" width="48" height="48" alt="Tajdîn logo"><br>**Tajdîn** | Internet radio always by your side: Kurdish stations and 50,000 more, for Chrome, Firefox and the web. | [Website](https://kanilabs.github.io/tajdin/) · [Source](https://github.com/kanilabs/tajdin) |
-| <img src="assets/projects/deq.svg" width="48" height="48" alt="Deq placeholder logo"><br>**Deq** · دەق | Traditional Kurdish tattoo shapes as an open, parametric design system: spec, TypeScript, Python and Rust libraries, icons, fonts and Studio. *In development.* | [Source](https://github.com/kanilabs/deq) |
+| <img src="assets/projects/deq.svg" width="48" height="48" alt="Deq logo"><br>**Deq** · دەق | Traditional Kurdish tattoo shapes as an open, parametric design system: spec, TypeScript, Python and Rust libraries, icons, fonts and Studio. *In development.* | [Source](https://github.com/kanilabs/deq) |
 
 ## The mark
 
